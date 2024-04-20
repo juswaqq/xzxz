@@ -1,0 +1,125 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+            margin: 0;
+            padding: 0;
+            font-family: times new roman, sans-serif;
+            color:white; /* white text */
+            line-height: 1.6;
+            background-image: url('DSCF8180 (1).jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+   .row {
+            display: flex; /* Use flexbox to create a row layout */
+            justify-content: space-around; /* Distribute items evenly along the row */
+            margin-bottom: 20px; /* Add some spacing between rows */
+        }
+ .photo {
+            width: 200px; /* Adjust the width of individual photos */
+            height: 200px; /* Adjust the height of individual photos */
+            border-radius: 5px; /* Add rounded corners to photos */
+            overflow: hidden; /* Hide any content that may overflow */
+            margin: 0 10px; /* Add spacing between photos */
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+
+/* Header styles */
+header {
+    background-color: #222; /* white header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+/* CSS styles */
+        a {
+            color: white; /* Change link color to white */
+            text-decoration: underline; /* Remove underline */
+        }
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* white text	 */
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Animation styles */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Music styles */
+.music-note {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #ffcb77; /* Yellow music note */
+    border-radius: 50% 50% 0 0;
+    transform: rotate(45deg);
+    animation: musicNote 1s infinite alternate;
+}
+
+@keyframes musicNote {
+    from {
+        transform: translateY(0) rotate(45deg);
+    }
+    to {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #222; /* Dark gray footer */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
